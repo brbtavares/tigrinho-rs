@@ -1,4 +1,8 @@
-# Tigrinho RS
+<p align="center">
+	<img src="tiger-logo.png" alt="Tigrinho logo" width="720" />
+</p>
+
+# tigrinho-rs
 
 Prototype slot-like engine and demo built in Rust with a provably-fair RNG.
 
@@ -31,7 +35,6 @@ WASM (optional):
 - Install trunk: `cargo install trunk`
 - Add wasm toolchain: `rustup target add wasm32-unknown-unknown`
 - Run: `cd tigrinho_wasm && trunk serve`
- - Run: `cd tigrinho_wasm && trunk serve`
 
 Testing:
 - `cargo test` runs unit tests and RTP simulation smoke tests.
