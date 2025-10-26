@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="tiger-logo.png" alt="Tigrinho logo" width="720" />
+	<img src="tiger-logo.png" alt="tigrinho logo" width="720" />
 </p>
 
 # tigrinho-rs

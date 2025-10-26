@@ -67,7 +67,7 @@ pub fn spin_once(
     bet: f64,
     _lines: u32,
 ) -> SpinOutcome {
-            let window = compute_reel_window(rng, &params.reels);
+    let window = compute_reel_window(rng, &params.reels);
     let payout = evaluate_payout(&window, &params.paytable, bet);
     SpinOutcome {
         reel_window: window,
