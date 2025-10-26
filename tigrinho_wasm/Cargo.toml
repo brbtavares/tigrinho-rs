@@ -1,0 +1,17 @@
+[package]
+name = "tigrinho_wasm"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+yew = { version = "0.21", features=["csr"] }
+wasm-bindgen = { version = "0.2" }
+wasm-bindgen-futures = { version = "0.4" }
+web-sys = { version = "0.3", features = ["CanvasRenderingContext2d", "HtmlCanvasElement", "Document", "Window"] }
+serde = { version = "1", features=["derive"] }
+serde_json = { version = "1" }
+reqwest = { version = "0.12", default-features = false, features=["json"] }
+

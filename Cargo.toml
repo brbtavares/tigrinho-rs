@@ -1,0 +1,53 @@
+[workspace]
+members = [
+    "tigrinho_shared",
+    "tigrinho_core",
+    "tigrinho_server",
+    "tigrinho_cli",
+    "tigrinho_wasm",
+]
+# Keep wasm crate out of default-members to avoid wasm toolchain on CI
+default-members = [
+    "tigrinho_shared",
+    "tigrinho_core",
+    "tigrinho_server",
+    "tigrinho_cli",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+
+[workspace.dependencies]
+anyhow = "1"
+thiserror = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time", "sync"] }
+hmac = "0.12"
+sha2 = "0.10"
+hex = "0.4"
+rand = "0.8"
+
+# Server-side
+axum = { version = "0.7", features = ["macros", "json"] }
+tower = "0.5"
+tower-http = { version = "0.5", features = ["trace", "cors"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+http = "1"
+
+# Database
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "sqlite", "macros", "chrono", "migrate"] }
+chrono = { version = "0.4", features = ["serde"] }
+
+# CLI
+clap = { version = "4", features = ["derive", "env"] }
+
+
+[workspace.metadata]
+database_url = "sqlite://tigrinho.db"
+
+[profile.release]
+lto = true
+codegen-units = 1

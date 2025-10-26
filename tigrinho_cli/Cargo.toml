@@ -1,0 +1,17 @@
+[package]
+name = "tigrinho_cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true }
+sqlx = { workspace = true }
+sha2 = { workspace = true }
+chrono = { workspace = true }
+serde = { workspace = true, features=["derive"] }
+serde_json = { workspace = true }
+hex = { workspace = true }
+csv = "1"
+tokio = { workspace = true }
+

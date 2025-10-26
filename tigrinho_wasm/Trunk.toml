@@ -1,0 +1,8 @@
+[build]
+target = "wasm32-unknown-unknown"
+release = true
+
+[serve]
+proxy_backend = "http://127.0.0.1:8080"
+port = 8081
+open = true

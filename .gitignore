@@ -1,0 +1,15 @@
+target/
+**/*.rs.bk
+Cargo.lock
+/node_modules
+pkg/
+dist/
+wasm-pack.log
+/.cargo/
+.DS_Store
+/.env
+/.env.*
+# Sqlite DB
+*.db
+*.db-shm
+*.db-wal
