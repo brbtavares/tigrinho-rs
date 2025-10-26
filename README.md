@@ -1,5 +1,7 @@
 <p align="center">
-	<img src="tiger-logo.png" alt="tigrinho logo" width="720" />
+	<a href="https://github.com/brbtavares/tigrinho-rs">
+		<img src="https://raw.githubusercontent.com/brbtavares/tigrinho-rs/main/tiger-logo.png" alt="Tigrinho logo" width="240" />
+	</a>
 </p>
 
 # tigrinho-rs
